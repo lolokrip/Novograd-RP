@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/uliya/Downloads/deepseek_html_20260523_c6a718.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Новоград RP — город возможностей на Roblox</title>
+    <link rel="stylesheet" href="./Новоград RP — город возможностей на Roblox_files/all.min.css">
+    <link href="./Новоград RP — город возможностей на Roblox_files/css2" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #080a0f;
+            font-family: 'Inter', sans-serif;
+            color: #eef2ff;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        .site-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #14161f;
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+            overflow-x: hidden;
+        }
+        .news-bar {
+            background: #0b0d14;
+            padding: 12px 32px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            border-bottom: 1px solid #292e3c;
+            flex-wrap: wrap;
+        }
+        .news-static {
+            color: #3b82f6;
+            font-weight: 800;
+            font-size: 1.2rem;
+            background: rgba(59,130,246,0.12);
+            padding: 6px 16px;
+            border-radius: 60px;
+        }
+        .ticker-wrapper {
+            flex: 1;
+            overflow: hidden;
+        }
+        .ticker-scroll {
+            display: inline-block;
+            white-space: nowrap;
+            animation: tickerMove 20s linear infinite;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        .ticker-scroll a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .ticker-scroll a:hover {
+            color: #3b82f6;
+        }
+        @keyframes tickerMove {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 44px;
+            background: #181c26;
+            border-bottom: 1px solid #2a2f3e;
+            flex-wrap: wrap;
+        }
+        .nav-center {
+            display: flex;
+            gap: 2rem;
+            background: #232833;
+            padding: 10px 32px;
+            border-radius: 100px;
+        }
+        .nav-center a, .nav-link {
+            color: #cfdfff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .nav-center a:hover, .nav-link:hover {
+            color: white;
+            text-shadow: 0 0 6px #3b82f6;
+        }
+        .logo-right {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(130deg, #fff, #97b3ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .action-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px 44px 20px 44px;
+            gap: 24px;
+        }
+        .start-btn-style {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(95deg, #e0e7ff, #96b1ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            cursor: pointer;
+        }
+        .search-area {
+            display: flex;
+            background: #232833;
+            border-radius: 60px;
+            padding: 5px 6px 5px 24px;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #3d4357;
+        }
+        .search-area input {
+            background: transparent;
+            border: none;
+            padding: 12px 0;
+            width: 260px;
+            color: white;
+            outline: none;
+        }
+        .search-area button {
+            background: #3b82f6;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 24px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .divider-custom {
+            margin: 8px 44px 24px 44px;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #3b82f6 65%, transparent 90%);
+        }
+        .filters {
+            display: flex;
+            gap: 32px;
+            padding: 8px 44px 24px 44px;
+            flex-wrap: wrap;
+        }
+        .filter-chip {
+            font-weight: 700;
+            color: #b7c3f0;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .filter-chip:hover {
+            color: white;
+            border-bottom-color: #3b82f6;
+        }
+        .cards-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 20px 44px 60px 44px;
+        }
+        .rp-card {
+            background: #20242f;
+            border-radius: 32px;
+            width: 300px;
+            overflow: hidden;
+            transition: 0.25s;
+            cursor: pointer;
+            border: 1px solid #31384b;
+        }
+        .rp-card:hover {
+            transform: translateY(-8px);
+        }
+        .card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .img-police {
+            background: linear-gradient(125deg, #14223b, #010a1a), url('https://via.placeholder.com/300x200?text=Полиция');
+            background-size: cover;
+        }
+        .img-opg {
+            background: linear-gradient(135deg, #2c1a2a, #11050f), url('https://via.placeholder.com/300x200?text=ОПГ');
+            background-size: cover;
+        }
+        .img-army {
+            background: linear-gradient(145deg, #1e3a2f, #071a12), url('https://via.placeholder.com/300x200?text=Армия');
+            background-size: cover;
+        }
+        .card-info {
+            padding: 24px;
+            text-align: center;
+        }
+        .faction-title {
+            font-size: 1.9rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        .tag {
+            display: inline-block;
+            background: #1e2b3c;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+        }
+
+        /* Форум */
+        .forum-container {
+            display: flex;
+            padding: 32px 44px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .forum-sidebar {
+            width: 260px;
+            background: #1e222d;
+            border-radius: 28px;
+            padding: 24px;
+            align-self: start;
+        }
+        .forum-sidebar h3 {
+            margin-bottom: 20px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+        }
+        .forum-sidebar ul {
+            list-style: none;
+        }
+        .forum-sidebar li {
+            padding: 10px 0;
+            color: #b7c3f0;
+            cursor: pointer;
+            border-bottom: 1px solid #2a2f3e;
+        }
+        .forum-sidebar li.active-forum-cat {
+            color: white;
+            font-weight: 600;
+        }
+        .forum-main {
+            flex: 1;
+            background: #1e222d;
+            border-radius: 28px;
+            padding: 24px;
+        }
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #2f3545;
+        }
+        .btn-primary {
+            background: #3b82f6;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 40px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: scale(0.97);
+        }
+        .btn-secondary {
+            background: #2d3240;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 40px;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-secondary:hover {
+            background: #3a4050;
+        }
+        .post-list {
+            margin-top: 20px;
+        }
+        .post-item {
+            background: #252a36;
+            border-radius: 20px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .post-status {
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin-left: 12px;
+        }
+        .status-open {
+            background: #f59e0b;
+        }
+        .status-accepted {
+            background: #10b981;
+        }
+        .status-rejected {
+            background: #ef4444;
+        }
+
+        /* Правила */
+        .rules-container {
+            padding: 32px 44px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .rules-card {
+            background: #1e222d;
+            border-radius: 28px;
+            padding: 24px;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid #2f3545;
+        }
+        .rules-card:hover {
+            background: #252c3a;
+            transform: translateY(-4px);
+        }
+        .rules-card h3 {
+            color: #3b82f6;
+            margin-bottom: 12px;
+        }
+
+        /* Модальные окна — УЛУЧШЕННЫЕ */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: #1a1e2a;
+            max-width: 900px;
+            width: 90%;
+            border-radius: 32px;
+            padding: 40px;
+            border: 1px solid #3b82f6;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .modal-content h2 {
+            margin-bottom: 24px;
+            color: #3b82f6;
+            font-size: 1.8rem;
+        }
+        .modal-content label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #cfdfff;
+        }
+        .modal-content input, .modal-content select, .modal-content textarea {
+            width: 100%;
+            background: #10131c;
+            border: 1px solid #2f3545;
+            padding: 14px;
+            border-radius: 16px;
+            color: white;
+            margin-bottom: 20px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .modal-content textarea {
+            resize: vertical;
+        }
+        .modal-content .radio-group {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .modal-content .radio-group label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: normal;
+        }
+        .modal-content input[type="range"] {
+            width: 100%;
+            margin: 10px 0 20px;
+        }
+        .modal-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        /* Админ панель */
+        .admin-container {
+            padding: 32px 44px;
+        }
+        .ticket-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .ticket-item {
+            background: #1e222d;
+            border-radius: 24px;
+            padding: 20px;
+            border-left: 6px solid #3b82f6;
+            word-break: break-word;
+        }
+        .ticket-actions {
+            margin-top: 16px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .action-btn {
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .action-accept {
+            background: #10b981;
+            color: white;
+        }
+        .action-accept:hover {
+            background: #059669;
+            transform: scale(0.96);
+        }
+        .action-reject {
+            background: #ef4444;
+            color: white;
+        }
+        .action-reject:hover {
+            background: #dc2626;
+        }
+        .action-comment {
+            background: #3b82f6;
+            color: white;
+        }
+        .action-comment:hover {
+            background: #2563eb;
+        }
+
+        /* Футер анимация */
+        .magic-footer {
+            background: #03060c;
+            border-radius: 48px 48px 0 0;
+            padding: 48px 44px 36px;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: transform 0.65s cubic-bezier(0.2, 0.9, 0.4, 1.2), opacity 0.6s ease;
+            will-change: transform, opacity;
+        }
+        .magic-footer.reveal {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .footer-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .footer-col a {
+            display: block;
+            color: #9aa5ca;
+            text-decoration: none;
+            margin: 12px 0;
+            cursor: pointer;
+        }
+        .copyright-line {
+            display: flex;
+            justify-content: flex-end;
+            gap: 28px;
+            margin-top: 40px;
+            font-size: 0.8rem;
+        }
+        @media (max-width: 850px) {
+            .main-header {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .forum-container {
+                flex-direction: column;
+            }
+            .modal-content {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="site-container">
+    <div class="news-bar">
+        <div class="news-static"><i class="fas fa-bullhorn"></i> НОВОСТИ</div>
+        <div class="ticker-wrapper">
+            <div class="ticker-scroll">🔥 ДОБРО ПОЖАЛОВАТЬ НА НОВОГРАД РП! &nbsp;•&nbsp; ПРИСОЕДИНЯЙСЯ К НАШЕМУ ДИСКОРД СЕРВЕРУ: <a href="https://discord.gg/8Ra3Mx47y" target="_blank">https://discord.gg/8Ra3Mx47y</a></div>
+        </div>
+    </div>
+    <div style="background: #171b24;">
+        <div class="main-header">
+            <div></div>
+            <div class="nav-center">
+                <a class="nav-link" data-page="main">Главная</a>
+                <a class="nav-link" data-page="forum">Форум</a>
+                <a class="nav-link" data-page="admin">Администрация</a>
+                <a class="nav-link" data-page="rules">Правила</a>
+            </div>
+            <div class="logo-right">NOVOGRAD</div>
+        </div>
+
+        <!-- Главная -->
+        <div id="main-page" class="page active">
+            <div class="action-row">
+                <div class="start-btn-style" id="startGameLink"><i class="fas fa-play-circle"></i> НАЧАТЬ ИГРУ</div>
+                <div class="search-area"><input type="text" id="searchInput" placeholder="Поиск фракций..."><button id="searchTrigger"><i class="fas fa-search"></i> Найти</button></div>
+            </div>
+            <div class="divider-custom"></div>
+            <div class="filters">
+                <div class="filter-chip" data-filter="all">Всё</div>
+                <div class="filter-chip" data-filter="gov">Гос. структура</div>
+                <div class="filter-chip" data-filter="crime">Криминал</div>
+                <div class="filter-chip" data-filter="work">Работы</div>
+            </div>
+            <div class="cards-grid">
+                <div class="rp-card" data-type="gov" data-name="Полиция"><div class="card-image img-police"></div><div class="card-info"><div class="faction-title">ПОЛИЦИЯ</div><div class="tag">ГОС. СТРУКТУРА</div></div></div>
+                <div class="rp-card" data-type="crime" data-name="ОПГ"><div class="card-image img-opg"></div><div class="card-info"><div class="faction-title">ОПГ</div><div class="tag">КРИМИНАЛ</div></div></div>
+                <div class="rp-card" data-type="gov" data-name="Армия"><div class="card-image img-army"></div><div class="card-info"><div class="faction-title">АРМИЯ</div><div class="tag">ГОС. СТРУКТУРА</div></div></div>
+            </div>
+        </div>
+
+        <!-- Форум -->
+        <div id="forum-page" class="page">
+            <div class="forum-container">
+                <div class="forum-sidebar">
+                    <h3>Novograd RP</h3>
+                    <ul id="forumCategories">
+                        <li data-cat="all" class="active-forum-cat">Основное - Все посты</li>
+                        <li data-cat="appeals">Обращения</li>
+                        <li data-cat="reviews">Отзывы о сотрудниках</li>
+                        <li data-cat="questions">Вопросы</li>
+                    </ul>
+                </div>
+                <div class="forum-main">
+                    <div class="forum-header">
+                        <h2 id="forumTitle">Все посты</h2>
+                        <div>
+                            <button class="btn-primary" id="createPostBtn"><i class="fas fa-plus-circle"></i> Создать обращение</button>
+                            <button class="btn-secondary" id="createReviewBtn"><i class="fas fa-star"></i> Отзыв о сотруднике</button>
+                        </div>
+                    </div>
+                    <div id="forumPosts" class="post-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Администрация -->
+        <div id="admin-page" class="page">
+            <div class="admin-container">
+                <div style="display:flex; justify-content:space-between; margin-bottom:24px; flex-wrap:wrap; gap:16px;">
+                    <h2>Панель заявок на администратора</h2>
+                    <button class="btn-primary" id="openAppModalBtn"><i class="fas fa-file-alt"></i> Подать заявку</button>
+                </div>
+                <div id="adminAuthDiv" style="margin-bottom:20px;">
+                    <input type="password" id="adminPassword" placeholder="Пароль администратора" style="background:#10131c; border:1px solid #3b82f6; padding:10px; border-radius:40px; color:white; width:260px;">
+                    <button id="authAdminBtn" class="btn-primary" style="margin-left:10px;">Войти</button>
+                </div>
+                <div id="adminPanel" style="display:none;">
+                    <div style="background:#10131c; padding:16px; border-radius:24px; margin-bottom:24px;">
+                        <label><i class="fab fa-discord"></i> Discord Webhook URL (фиксированный)</label>
+                        <input type="text" id="webhookUrl" readonly="" value="https://discord.com/api/webhooks/1502564944590143548/Zk7PUreCzbErYLPYkS0yR8BjUmzEz1FnUqHUfkzHY8UuaUp3ImWeJRe7zLbP7Rhf5GhQ" style="width:100%; background:#0b0d14; border:1px solid #3b82f6; padding:12px; border-radius:40px; color:white; opacity:0.7;">
+                    </div>
+                    <div id="ticketsList" class="ticket-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правила -->
+        <div id="rules-page" class="page">
+            <div class="rules-container">
+                <div class="rules-card" data-rule="forum-rules"><h3>📜 Правила форума</h3><p>Основные правила, регулирующие жизнедеятельность форума. Обязательны к ознакомлению для всех пользователей.</p></div>
+                <div class="rules-card" data-rule="project-rules"><h3>⚖️ Правила Проекта</h3><p>Администрация проекта имеет право наказывать игроков даже за неописанные правила. Полный список наказаний.</p></div>
+                <div class="rules-card" data-rule="rp-terms"><h3>📖 РП-Термины</h3><p>Основные термины ролевой игры: NLR, MG, PG, DM, RVK, Багююз и другие.</p></div>
+            </div>
+        </div>
+
+        <!-- Футер -->
+        <div id="dynamicFooter" class="magic-footer">
+            <div class="footer-flex">
+                <div class="footer-col"><div style="font-size:1.8rem; font-weight:800;">NVRP</div><p>Реалистичная жизнь в Новограде на Roblox.</p></div>
+                <div class="footer-col"><h4>Навигация</h4><a class="nav-link" data-page="main">Главная</a><a class="nav-link" data-page="forum">Форум</a><a class="nav-link" data-page="admin">Администрация</a><a class="nav-link" data-page="rules">Правила</a></div>
+                <div class="footer-col"><h4>Информация</h4><a href="file:///C:/Users/uliya/Downloads/deepseek_html_20260523_c6a718.html#">Политика конфиденциальности</a><a href="file:///C:/Users/uliya/Downloads/deepseek_html_20260523_c6a718.html#">Поддержка</a></div>
+            </div>
+            <div class="copyright-line"><span>© 2026 NOVOGRAD RP. Все права защищены.</span><span>Developed by @perdynvozdyhan</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальные окна -->
+<div id="rulesModal" class="modal">
+    <div class="modal-content">
+        <h2 id="rulesModalTitle"></h2>
+        <div id="rulesModalBody" style="white-space:pre-wrap;"></div>
+        <div class="modal-buttons"><button class="btn-secondary" id="closeRulesModal">Закрыть</button></div>
+    </div>
+</div>
+
+<div id="postModal" class="modal">
+    <div class="modal-content">
+        <h2 id="modalTitle">Создать обращение</h2>
+        <label>Заголовок</label>
+        <input type="text" id="postTitle" placeholder="Кратко опишите суть">
+        <label>Текст</label>
+        <textarea id="postBody" rows="5" placeholder="Подробное описание..."></textarea>
+        <label>Ваш Discord</label>
+        <input type="text" id="postAuthorDiscord" placeholder="Discord ник">
+        <div class="modal-buttons">
+            <button class="btn-secondary" id="closePostModal">Отмена</button>
+            <button class="btn-primary" id="submitPostBtn">Опубликовать</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ФИКСИРОВАННЫЙ WEBHOOK URL
+    const WEBHOOK_URL = "https://discord.com/api/webhooks/1502564944590143548/Zk7PUreCzbErYLPYkS0yR8BjUmzEz1FnUqHUfkzHY8UuaUp3ImWeJRe7zLbP7Rhf5GhQ";
+    async function sendToDiscord(embed) {
+        try {
+            await fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ embeds: [embed] }) });
+        } catch(e) { console.error(e); }
+    }
+
+    // ======================= ПРАВИЛА =======================
+    const rulesContent = {
+        'forum-rules': {
+            title: 'Правила форума',
+            content: `Основные правила, регулирующие жизнедеятельность форума. Обязательны к ознакомлению для всех пользователей.\n\n📌 Общие положения\n- Администрация форума оставляет за собой право изменять, дополнять или удалять любые правила без предварительного уведомления.\n- Незнание правил не освобождает от ответственности за их нарушение.\n- Регистрируясь на форуме, вы автоматически соглашаетесь с данными правилами.\n- Администрация имеет право применять любые санкции к нарушителям по своему усмотрению, вплоть до блокировки аккаунта.\n\n💬 Общение на форуме\n- Запрещены оскорбления, унижения, хамство в адрес других пользователей или администрации.\n- Запрещен флуд (бессмысленные сообщения) в тематических разделах.\n- Запрещен флейм (переход на личности, выяснение отношений) в публичных разделах.\n- Запрещена реклама сторонних ресурсов без согласования с администрацией.\n- Запрещен спам (многократное повторение одинаковых сообщений).`
+        },
+        'project-rules': {
+            title: 'Правила Проекта',
+            content: `Администрация проекта имеет право наказывать игроков даже за неописанные правила.\n\n📛 [1.0] НонРП (НРП) – 10-15m jail / 1d-7d ban\n📛 [1.0.1] Помеха РП – 5-10m jail / 1d-3d ban\n🚗 [1.1] НонРП Драйв (НРД) – 5-10m jail / 1d ban\n👕 [1.2] НонРП форма – Бан 1 день\n\n⚔️ [2.0] ДМ (DeathMatch) – 10-15m jail / 1d-7d ban\n⚔️ [2.1] SK (SpawnKill) – 10-15m jail / 1d-3d ban\n⚔️ [2.2] ТК (TeamKill) – 10-15m jail / 1d-3d ban\n⚔️ [2.3] Массовый ДМ – 3d-7d-14d ban\n⚔️ [2.4] RVK (RevengeKill) – 10-15m jail / 1d-7d ban\n\n🎭 [3.0] PG (PowerGaming) – 10-15m jail / 1d-7d ban\n🐞 [3.1] Багююз (BugAbuse) – 1-30 дней / значительные баги до Perm ban\n🚫 [3.2] Обход бана (BanEvade) – 3d,7d,14d,30d ban\n\n💬 [4.0] Флуд в чате – Server kick\n💬 [4.1] Упоминание/Оскорбление родных – 3d-14d ban\n💬 [4.2] Оскорбление игроков – 3h-1d ban\n💬 [4.3] Оскорбление Администрации – 1d-30d ban\n💬 [4.4] Оскорбление проекта – 3d-Perm ban\n🧠 [4.5] MG (MetaGaming) – 10-15m jail / 1d ban\n\n⚠️ [5.0] Упоминание наркотиков в общем чате – 1h-12h ban\n⚠️ [5.1] Упоминание терроризма – 3-12h muta / 1-2d ban\n⚠️ [5.2] Реклама других проектов – Perm ban\n\n🔞 [6.0] ERP (EroticRP) – 3d-30d ban / Perm ban\n🚪 [6.1] Уход от РП – 1d-7d ban\n🎲 [6.2] Отыгровки в свою сторону – 10-15m jail / 8h ban\n👑 [6.3] Выдача себя за администрацию – 3d-14d ban\n🤥 [6.4] Обман администрации – 3d-60d ban\n🚔 [6.5] Наручники/Дубинка в ПВП – 10-15m jail / 1d ban\n💀 [6.6] NLR (NewLifeRule) – 10-15m jail / 12h-1d ban\n\n🗳️ [7.0] Любое упоминание политики – 1d-3d ban\n⛪ [7.1] Оскорбление религий – 1d-14d ban`
+        },
+        'rp-terms': {
+            title: 'РП-Термины',
+            content: `Основные термины ролевой игры:\n\n🎭 НонРП (НРП) – не ролевое поведение, игнорирование РП процесса.\n💀 ДМ (DeathMatch) – убийство без причины.\n📍 SK (SpawnKill) – убийство на спавне.\n👥 ТК (TeamKill) – убийство союзника по фракции.\n🗡️ RVK (RevengeKill) – убийство с целью мести.\n💪 PG (PowerGaming) – действия, невозможные в реальности.\n🐞 Багююз – использование ошибок игры для получения преимущества.\n📋 MG (MetaGaming) – использование OOC информации в IC.\n📖 NLR – забывание событий после смерти (в течение 5 минут).\n❤️ ERP – эротическая рольвая игра, запрещена.\n🚗 НРД – езда не по дороге.\n👕 НонРП форма – нереалистичная одежда.`
+        }
+    };
+    const rulesModal = document.getElementById('rulesModal');
+    document.querySelectorAll('.rules-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const key = card.getAttribute('data-rule');
+            const data = rulesContent[key];
+            if (data) {
+                document.getElementById('rulesModalTitle').innerText = data.title;
+                document.getElementById('rulesModalBody').innerText = data.content;
+                rulesModal.style.display = 'flex';
+            }
+        });
+    });
+    document.getElementById('closeRulesModal').addEventListener('click', () => rulesModal.style.display = 'none');
+    window.addEventListener('click', (e) => { if (e.target === rulesModal) rulesModal.style.display = 'none'; });
+
+    // ======================= ФОРУМ =======================
+    let forumPosts = JSON.parse(localStorage.getItem('forum_posts')) || [];
+    let currentForumCat = 'all';
+    let isAdmin = false;
+    let isAdminForum = false;
+
+    function saveForumPosts() { localStorage.setItem('forum_posts', JSON.stringify(forumPosts)); }
+    function renderForum() {
+        const container = document.getElementById('forumPosts');
+        if (!container) return;
+        let filtered = forumPosts.filter(p => {
+            if (currentForumCat === 'all') return true;
+            if (currentForumCat === 'appeals') return p.category === 'appeal';
+            if (currentForumCat === 'reviews') return p.category === 'review';
+            if (currentForumCat === 'questions') return p.category === 'question';
+            return false;
+        });
+        if (filtered.length === 0) { container.innerHTML = '<div class="post-item">Нет постов.</div>'; return; }
+        container.innerHTML = filtered.map(post => `
+            <div class="post-item">
+                <div><strong>${escapeHtml(post.title)}</strong> <span class="post-status status-${post.status === 'pending' ? 'open' : (post.status === 'accepted' ? 'accepted' : 'rejected')}">${post.status === 'pending' ? 'На рассмотрении' : (post.status === 'accepted' ? 'Принято' : 'Отказано')}</span></div>
+                <div><small>Автор: ${escapeHtml(post.authorDiscord)} | Категория: ${post.category === 'appeal' ? 'Обращение' : (post.category === 'review' ? 'Отзыв' : 'Вопрос')}</small></div>
+                <p>${escapeHtml(post.body)}</p>
+                ${isAdminForum ? `<div class="ticket-actions"><button class="action-btn action-accept" onclick="updatePostStatus(${post.id}, 'accepted')"><i class="fas fa-check-circle"></i> Принять</button> <button class="action-btn action-reject" onclick="updatePostStatus(${post.id}, 'rejected')"><i class="fas fa-times-circle"></i> Отказать</button></div>` : ''}
+            </div>
+        `).join('');
+    }
+
+    window.updatePostStatus = async (id, status) => {
+        const post = forumPosts.find(p => p.id === id);
+        if (post) {
+            post.status = status;
+            saveForumPosts();
+            renderForum();
+            await sendToDiscord({ title: `✏️ Статус обращения изменён`, color: status === 'accepted' ? 0x10b981 : 0xef4444, fields: [{ name: 'Пост', value: post.title }, { name: 'Новый статус', value: status === 'accepted' ? 'Принят' : 'Отказан' }], timestamp: new Date().toISOString() });
+            alert(`Статус изменён на ${status === 'accepted' ? 'Принят' : 'Отказ'}`);
+        }
+    };
+
+    function createPost(category) {
+        const title = document.getElementById('postTitle').value.trim();
+        const body = document.getElementById('postBody').value.trim();
+        const authorDiscord = document.getElementById('postAuthorDiscord').value.trim();
+        if (!title || !body || !authorDiscord) { alert("Заполните все поля!"); return; }
+        const newPost = { id: Date.now(), title, body, authorDiscord, category, status: 'pending', createdAt: new Date().toISOString() };
+        forumPosts.unshift(newPost);
+        saveForumPosts();
+        sendToDiscord({ title: `📝 Новое обращение на форуме`, color: 0x3b82f6, fields: [{ name: 'Заголовок', value: title }, { name: 'Автор', value: authorDiscord }, { name: 'Текст', value: body.substring(0, 300) }], timestamp: new Date().toISOString() });
+        document.getElementById('postModal').style.display = 'none';
+        document.getElementById('postTitle').value = ''; document.getElementById('postBody').value = ''; document.getElementById('postAuthorDiscord').value = '';
+        renderForum();
+        alert("Пост опубликован!");
+    }
+
+    const postModal = document.getElementById('postModal');
+    document.getElementById('createPostBtn').onclick = () => { document.getElementById('modalTitle').innerText = 'Создать обращение'; window.currentPostCategory = 'appeal'; postModal.style.display = 'flex'; };
+    document.getElementById('createReviewBtn').onclick = () => { document.getElementById('modalTitle').innerText = 'Отзыв о сотруднике'; window.currentPostCategory = 'review'; postModal.style.display = 'flex'; };
+    document.getElementById('closePostModal').onclick = () => postModal.style.display = 'none';
+    document.getElementById('submitPostBtn').onclick = () => createPost(window.currentPostCategory);
+
+    document.querySelectorAll('#forumCategories li').forEach(li => {
+        li.onclick = () => {
+            document.querySelectorAll('#forumCategories li').forEach(l => l.classList.remove('active-forum-cat'));
+            li.classList.add('active-forum-cat');
+            currentForumCat = li.getAttribute('data-cat');
+            const titles = { all: 'Все посты', appeals: 'Обращения', reviews: 'Отзывы о сотрудниках', questions: 'Вопросы' };
+            document.getElementById('forumTitle').innerText = titles[currentForumCat];
+            renderForum();
+        };
+    });
+
+    // ======================= АДМИНКА ЗАЯВОК =======================
+    let tickets = JSON.parse(localStorage.getItem('admin_tickets')) || [];
+    function saveTickets() { localStorage.setItem('admin_tickets', JSON.stringify(tickets)); }
+    function renderAdminPanel() {
+        const container = document.getElementById('ticketsList');
+        if (!container) return;
+        if (tickets.length === 0) { container.innerHTML = '<div class="ticket-item">Нет заявок.</div>'; return; }
+        container.innerHTML = tickets.map(t => `
+            <div class="ticket-item">
+                <div><strong>${escapeHtml(t.rbNick)}</strong> (${escapeHtml(t.dsNick)}) <span class="post-status status-${t.status === 'pending' ? 'open' : (t.status === 'accepted' ? 'accepted' : 'rejected')}">${t.status === 'pending' ? 'На рассмотрении' : (t.status === 'accepted' ? 'Принят' : 'Отказ')}</span></div>
+                <div>Возраст: ${escapeHtml(t.age)} | Девайс: ${escapeHtml(t.device)} | Микрофон: ${escapeHtml(t.mic)}</div>
+                <details><summary>Подробнее</summary>
+                    <p><strong>Почему идёт:</strong> ${escapeHtml(t.reason)}</p>
+                    <p><strong>О себе:</strong> ${escapeHtml(t.about)}</p>
+                    <p><strong>Активность:</strong> ${escapeHtml(t.activity)}/10 | Грамотность: ${escapeHtml(t.grammar)}/10</p>
+                    <p><strong>Почему принять:</strong> ${escapeHtml(t.whyUs)}</p>
+                    <p><strong>Опыт:</strong> ${escapeHtml(t.exp)}</p>
+                    <p><strong>Планы:</strong> ${escapeHtml(t.plan)}</p>
+                    ${t.adminComment ? `<p><strong>Комментарий:</strong> ${escapeHtml(t.adminComment)}</p>` : ''}
+                </details>
+                <div class="ticket-actions">
+                    <button class="action-btn action-accept" onclick="updateTicketStatus(${t.id}, 'accepted')"><i class="fas fa-check-circle"></i> Принять</button>
+                    <button class="action-btn action-reject" onclick="updateTicketStatus(${t.id}, 'rejected')"><i class="fas fa-times-circle"></i> Отказать</button>
+                    <button class="action-btn action-comment" onclick="addTicketComment(${t.id})"><i class="fas fa-comment"></i> Комментарий</button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    window.updateTicketStatus = async (id, status) => {
+        const t = tickets.find(t => t.id === id);
+        if (t) {
+            t.status = status;
+            saveTickets();
+            renderAdminPanel();
+            await sendToDiscord({ title: `📋 Заявка на администратора`, color: status === 'accepted' ? 0x10b981 : 0xef4444, fields: [{ name: 'Игрок', value: t.rbNick }, { name: 'Статус', value: status === 'accepted' ? 'Принят' : 'Отказ' }], timestamp: new Date().toISOString() });
+            alert(`Статус изменён на ${status === 'accepted' ? 'Принят' : 'Отказ'}`);
+        }
+    };
+    window.addTicketComment = (id) => {
+        const comment = prompt("Введите комментарий:");
+        if (comment) { const t = tickets.find(t => t.id === id); t.adminComment = comment; saveTickets(); renderAdminPanel(); }
+    };
+
+    // Модальное окно анкеты
+    if (!document.getElementById('appModal')) {
+        const appModalDiv = document.createElement('div'); appModalDiv.className = 'modal'; appModalDiv.id = 'appModal';
+        appModalDiv.innerHTML = `
+            <div class="modal-content">
+                <h2>Набор в персонал "Новоград РП"</h2>
+                <p style="color:#f97316;">За рофл анкету ЧС.</p>
+                <form id="appForm">
+                    <label>Ваш рб ник *</label><input id="rbNick" required>
+                    <label>ваш дс ник *</label><input id="dsNick" required>
+                    <label>ваш возраст *</label><input id="age" type="number" required>
+                    <label>Почему идёте сюда? *</label><textarea id="reason" rows="2" required></textarea>
+                    <label>Ваш постоянный девайс? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="device" value="Телефон"> Телефон</label>
+                        <label><input type="radio" name="device" value="ПК"> ПК</label>
+                        <label><input type="radio" name="device" value="Микроволновка"> Микроволновка</label>
+                    </div>
+                    <label>расскажите о себе (5+ предложений) *</label><textarea id="about" rows="4" required></textarea>
+                    <label>ваша активность (1-10)</label><input type="range" id="activity" min="1" max="10" value="5">
+                    <label>ваша грамотность? (1-10)</label><input type="range" id="grammar" min="1" max="10" value="5">
+                    <label>почему мы должны принять именно вас *</label><textarea id="whyUs" rows="2" required></textarea>
+                    <label>Был опыт в администрации? *</label><textarea id="exp" rows="2" required></textarea>
+                    <label>есть микрофон? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="mic" value="Да"> Да</label>
+                        <label><input type="radio" name="mic" value="Нет"> Нет</label>
+                    </div>
+                    <label>что вы собираетесь делать в Администрации *</label><textarea id="plan" rows="3" required></textarea>
+                    <div class="modal-buttons">
+                        <button type="button" class="btn-secondary" id="closeAppModalBtn">Отмена</button>
+                        <button type="submit" class="btn-primary">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        `;
+        document.body.appendChild(appModalDiv);
+    }
+    document.getElementById('openAppModalBtn').addEventListener('click', () => {
+        document.getElementById('appModal').style.display = 'flex';
+    });
+    document.getElementById('closeAppModalBtn').addEventListener('click', () => {
+        document.getElementById('appModal').style.display = 'none';
+    });
+    document.getElementById('appForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const device = document.querySelector('input[name="device"]:checked')?.value || "Не указано";
+        const mic = document.querySelector('input[name="mic"]:checked')?.value || "Не указано";
+        const newTicket = {
+            id: Date.now(),
+            rbNick: document.getElementById('rbNick').value,
+            dsNick: document.getElementById('dsNick').value,
+            age: document.getElementById('age').value,
+            reason: document.getElementById('reason').value,
+            device,
+            about: document.getElementById('about').value,
+            activity: document.getElementById('activity').value,
+            grammar: document.getElementById('grammar').value,
+            whyUs: document.getElementById('whyUs').value,
+            exp: document.getElementById('exp').value,
+            mic,
+            plan: document.getElementById('plan').value,
+            status: 'pending',
+            adminComment: '',
+            createdAt: new Date().toISOString()
+        };
+        tickets.unshift(newTicket);
+        saveTickets();
+        document.getElementById('appModal').style.display = 'none';
+        await sendToDiscord({ title: '📌 Новая заявка на администратора', color: 0x3b82f6, fields: [{ name: 'Roblox ник', value: newTicket.rbNick, inline: true }, { name: 'Discord', value: newTicket.dsNick, inline: true }, { name: 'Возраст', value: newTicket.age, inline: true }], timestamp: new Date().toISOString() });
+        alert("Заявка отправлена!");
+        if (isAdmin) renderAdminPanel();
+        e.target.reset();
+    });
+
+    // Авторизация с сохранением сессии
+    if (localStorage.getItem('admin_logged_in') === 'true') {
+        isAdmin = true; isAdminForum = true;
+        document.getElementById('adminAuthDiv').style.display = 'none';
+        document.getElementById('adminPanel').style.display = 'block';
+        setTimeout(() => { renderAdminPanel(); renderForum(); }, 100);
+    }
+    document.getElementById('authAdminBtn').addEventListener('click', () => {
+        const pwd = document.getElementById('adminPassword').value;
+        if (pwd === '64567876') {
+            isAdmin = true; isAdminForum = true;
+            localStorage.setItem('admin_logged_in', 'true');
+            document.getElementById('adminAuthDiv').style.display = 'none';
+            document.getElementById('adminPanel').style.display = 'block';
+            renderAdminPanel();
+            renderForum();
+            alert("Добро пожаловать, администратор!");
+        } else alert("Неверный пароль!");
+    });
+
+    // ======================= НАВИГАЦИЯ =======================
+    const pages = { main: document.getElementById('main-page'), forum: document.getElementById('forum-page'), admin: document.getElementById('admin-page'), rules: document.getElementById('rules-page') };
+    function showPage(pageId) {
+        Object.values(pages).forEach(p => p.classList.remove('active'));
+        pages[pageId].classList.add('active');
+        if (pageId === 'forum') renderForum();
+        if (pageId === 'admin' && isAdmin) renderAdminPanel();
+    }
+    document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', (e) => { e.preventDefault(); showPage(link.getAttribute('data-page')); }));
+
+    // ======================= АНИМАЦИЯ ФУТЕРА =======================
+    const footerEl = document.getElementById('dynamicFooter');
+    let lastScrollTop = 0;
+    let scrollTimeout;
+    function animateFooter() {
+        const currentScroll = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const isAtBottom = (currentScroll + windowHeight + 80) >= documentHeight;
+        if (isAtBottom) footerEl.classList.add('reveal');
+        else {
+            if (currentScroll > lastScrollTop) footerEl.classList.add('reveal');
+            else if (currentScroll < lastScrollTop) footerEl.classList.remove('reveal');
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }
+    window.addEventListener('scroll', () => {
+        if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
+        scrollTimeout = requestAnimationFrame(animateFooter);
+    });
+    setTimeout(() => {
+        if (window.scrollY + window.innerHeight + 80 >= document.documentElement.scrollHeight) footerEl.classList.add('reveal');
+    }, 200);
+
+    // ======================= ПОИСК И ФИЛЬТРЫ =======================
+    const searchInput = document.getElementById('searchInput'), searchBtn = document.getElementById('searchTrigger');
+    const cards = document.querySelectorAll('.rp-card');
+    function filterFactions() { const q = searchInput.value.toLowerCase(); cards.forEach(c => c.style.display = c.getAttribute('data-name').toLowerCase().includes(q) ? '' : 'none'); }
+    searchBtn.addEventListener('click', filterFactions);
+    searchInput.addEventListener('keypress', e => { if(e.key === 'Enter') filterFactions(); });
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+            const filter = chip.getAttribute('data-filter');
+            cards.forEach(c => c.style.border = '1px solid #31384b');
+            if(filter === 'all') cards.forEach(c => c.style.border = '3px solid #3b82f6');
+            else if(filter === 'gov') cards.forEach(c => { if(c.getAttribute('data-type') === 'gov') c.style.border = '3px solid #3b82f6'; else c.style.border = '1px solid #31384b'; });
+            else if(filter === 'crime') cards.forEach(c => { if(c.getAttribute('data-type') === 'crime') c.style.border = '3px solid #3b82f6'; else c.style.border = '1px solid #31384b'; });
+            else if(filter === 'work') alert("Хочешь работать? Тогда заходи в Новоград Рп и начинай свой путь!");
+        });
+    });
+    const discordMap = { 'Полиция': 'https://discord.gg/nhcxCyHRk', 'ОПГ': 'https://discord.gg/XpptMwrn', 'Армия': 'https://discord.gg/u7GahFNe' };
+    cards.forEach(card => { card.addEventListener('click', () => { const name = card.getAttribute('data-name'); window.open(discordMap[name], '_blank'); }); });
+    document.getElementById('startGameLink').addEventListener('click', () => alert("🚀 Игровой сервер Новоград RP скоро откроется!"));
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, m => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;' }[m] || m));
+    }
+</script><div class="modal" id="appModal">
+            <div class="modal-content">
+                <h2>Набор в персонал "Новоград РП"</h2>
+                <p style="color:#f97316;">За рофл анкету ЧС.</p>
+                <form id="appForm">
+                    <label>Ваш рб ник *</label><input id="rbNick" required="">
+                    <label>ваш дс ник *</label><input id="dsNick" required="">
+                    <label>ваш возраст *</label><input id="age" type="number" required="">
+                    <label>Почему идёте сюда? *</label><textarea id="reason" rows="2" required=""></textarea>
+                    <label>Ваш постоянный девайс? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="device" value="Телефон"> Телефон</label>
+                        <label><input type="radio" name="device" value="ПК"> ПК</label>
+                        <label><input type="radio" name="device" value="Микроволновка"> Микроволновка</label>
+                    </div>
+                    <label>расскажите о себе (5+ предложений) *</label><textarea id="about" rows="4" required=""></textarea>
+                    <label>ваша активность (1-10)</label><input type="range" id="activity" min="1" max="10" value="5">
+                    <label>ваша грамотность? (1-10)</label><input type="range" id="grammar" min="1" max="10" value="5">
+                    <label>почему мы должны принять именно вас *</label><textarea id="whyUs" rows="2" required=""></textarea>
+                    <label>Был опыт в администрации? *</label><textarea id="exp" rows="2" required=""></textarea>
+                    <label>есть микрофон? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="mic" value="Да"> Да</label>
+                        <label><input type="radio" name="mic" value="Нет"> Нет</label>
+                    </div>
+                    <label>что вы собираетесь делать в Администрации *</label><textarea id="plan" rows="3" required=""></textarea>
+                    <div class="modal-buttons">
+                        <button type="button" class="btn-secondary" id="closeAppModalBtn">Отмена</button>
+                        <button type="submit" class="btn-primary">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</body></html>
